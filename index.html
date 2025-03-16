@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <link rel="website icon" type="png" href="https://ik.imagekit.io/gandhevarun/Jamelicious/J.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <title>Jamelicious</title>
+</head>
+
+<body>
+    <div class="index-bg">
+        <div class="d-flex flex-row justify-content-between">
+            <div>
+                <a href="login.html">
+                    <img src="https://ik.imagekit.io/gandhevarun/Jamelicious/J.png" class="jamelicious-logo" />
+                </a>
+            </div>
+            <div class="d-flex flex-row justify-content-end">
+                <div class="d-flex user-info">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-D57KKQBWSqvufyhz3wONM0rJNDyFAYMgeA&s" class="user-icon" />
+                    <h1 class="username">Cart</h1>
+                </div>
+                <div class="d-flex user-info">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOsW-qK0rQcWNv6iv95_4FLuVML1V4IM-51g&s" class="user-icon" />
+                    <h1 class="username">John</h1>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img src="https://ik.imagekit.io/gandhevarun/Jamelicious/Jamelicious-Banner.png" class="banner-img img-fluid" />
+        </div>
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="jams">
+                        <h1 class="jam-title">Strawberry Jam</h1>
+                        <img src="https://ik.imagekit.io/gandhevarun/Jamelicious/Strawberry.jpeg" class="jam-img img-fluid" />
+                        <h2 class="jam-price">₹ 120</h2>
+                        <p class="rating">4.4/5 ⭐</p>
+                        <ul>
+                            <li>Made of Natural Strawberries</li>
+                            <li>Sweetened with Natural Honey.</li>
+                            <li>Vinegar & Lime extract for increased Shelf Life</li>
+                        </ul>
+                        <p> </p>
+                        <div class="item-container">
+                            <button id="add-button" class="add-btn" onclick="showCounter()">Add</button>
+                            <div id="counter" class="counter" style="display: none;">
+                                <button class="minus-btn" onclick="decreaseCount()">−</button>
+                                <span id="count" class="count-number">1</span>
+                                <button class="plus-btn" onclick="increaseCount()">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="jams">
+                        <h1 class="jam-title">Apricot Jam</h1>
+                        <img src="https://ik.imagekit.io/gandhevarun/Jamelicious/Apricot.jpeg" class="jam-img img-fluid" />
+                        <h2 class="jam-price">₹ 150</h2>
+                        <p class="rating">4.2/5 ⭐</p>
+                        <ul>
+                            <li>Made of Natural Apricots.</li>
+                            <li>Sweetened with Natural Honey.</li>
+                            <li>Vinegar & Lime extract for increased Shelf Life</li>
+                        </ul>
+                        <div class="item-container">
+                            <button id="add-button" class="add-btn" onclick="showCounter()">Add</button>
+                            <div id="counter" class="counter" style="display: none;">
+                                <button class="minus-btn" onclick="decreaseCount()">−</button>
+                                <span id="count" class="count-number">1</span>
+                                <button class="plus-btn" onclick="increaseCount()">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="jams">
+                        <h1 class="jam-title">Blueberry Jam</h1>
+                        <img src="https://ik.imagekit.io/gandhevarun/Jamelicious/Blueberry.jpeg" class="jam-img" />
+                        <h2 class="jam-price">₹ 195</h2>
+                        <p class="rating">4.4/5 ⭐</p>
+                        <ul>
+                            <li>Made of Fresh Blueberries.</li>
+                            <li>Sweetened with Natural Honey.</li>
+                            <li>Vinegar & Lime extract for increased Shelf Life</li>
+                        </ul>
+                        <div class="item-container">
+                            <button id="add-button" class="add-btn" onclick="showCounter()">Add</button>
+                            <div id="counter" class="counter" style="display: none;">
+                                <button class="minus-btn" onclick="decreaseCount()">−</button>
+                                <span id="count" class="count-number">1</span>
+                                <button class="plus-btn" onclick="increaseCount()">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 class="thankyou">Each jar a promise 😊</h1>
+    </div>
+</body>
+
+</html>
