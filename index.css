@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.index-bg {
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    padding: 12px;
+}
+
+.jamelicious-logo {
+    height: 50px;
+    width: 50px;
+    margin: 12px;
+}
+
+.username {
+    padding: 0px;
+    margin: 0px;
+    font-family: monospace;
+    font-size: 1.25rem;
+}
+
+.user-icon {
+    height: 20px;
+    width: 20px;
+    margin-right: 3px;
+    margin-top: 3px;
+}
+
+.jamelicious-logo:hover {
+    cursor: pointer;
+}
+
+.user-info {
+    margin: 1rem;
+}
+
+.username:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+#search {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+    margin-right: 10px;
+    transition: border-color 0.3s ease;
+}
+
+#search:focus {
+    border-color: var(--secondary-color);
+}
+
+#search-btn {
+    background-color: var(--primary-color);
+    color: var(--font-color-light);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#search-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+}
+
+.jams {
+    border-radius: 14px;
+    border-color: #f7f4f4;
+    box-shadow: 0 4px 10px #0000001a;
+    padding: 19px;
+    border-width: 3px;
+    border-style: solid;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 1.5rem;
+}
+
+.jams:hover {
+    box-shadow: 0 4px 10px #afafaf;
+    border-color: #FFC5C5;
+}
+
+.jam-title {
+    color: red;
+    font-family: Comic Sans MS;
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.jam-price {
+    color: black;
+    font-size: 1.25rem;
+}
+
+.rating {
+    color: gold;
+    font-size: 1rem;
+    padding-left: 3px;
+}
+
+.jam-img {
+    height: 124px;
+    width: 136px;
+    padding: 15px;
+    border-radius: 10px;
+    margin-left: 82px;
+}
+
+.add {
+    background-color: var(--primary-color);
+    color: var(--font-color-light);
+    border-width: 0px;
+    height: 38px;
+    width: 98px;
+    margin-left: 18px;
+    border-radius: 6px;
+    margin-top: 6px;
+}
+
+.add:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+.thankyou {
+    color: var(--secondary-color);
+    font-family: Lobster;
+    text-align: center;
+    margin: 1.5rem;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+.item-container {
+    text-align: left;
+}
+
+.add-btn {
+    background-color: #e53935;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 38px;
+    width: 98px;
+}
+
+.add-btn:hover {
+    background-color: #b71c1c;
+
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.minus-btn,
+.plus-btn {
+    background-color: transparent;
+    border: 2px solid #e53935;
+    color: #e53935;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.minus-btn:hover,
+.plus-btn:hover {
+    background-color: #e53935;
+    color: white;
+}
+
+.count-number {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    width: 30px;
+    display: inline-block;
+    text-align: center;
+}
